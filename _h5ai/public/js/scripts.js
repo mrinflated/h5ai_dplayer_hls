@@ -3556,7 +3556,7 @@ function(e) {
 				27 === t ? (P(e), $()) : 8 === t || 37 === t ? (P(e), M()) : 13 === t || 32 === t || 39 === t ? (P(e), E()) : 70 === t && (P(e), D())
 			},
 			L = function() {
-				A([]), a("#pv-container").clr(), a("#pv-overlay").show(), a(p).on("keydown", z), _()
+				//A([]), a("#pv-container").clr(), a("#pv-overlay").show(), a(p).on("keydown", z), _()
 			},
 			$ = function() {
 				var dpvideo = document.querySelector(".dplayer video");
@@ -3564,7 +3564,7 @@ function(e) {
 				    dpvideo.src = "";
 				    dpvideo.load();
 				}
-				A([]), a("#pv-container").clr(), a("#pv-overlay").hide(), a(p).off("keydown", z)
+				//A([]), a("#pv-container").clr(), a("#pv-overlay").hide(), a(p).off("keydown", z)
 			},
 			H = function e(t, n, r) {
 				p.clearTimeout(y);
@@ -3624,9 +3624,9 @@ function(e) {
 				})
 			},
 			R = function() {
-				h.enabled && (a(g).hide().appTo("body").on("keydown", z).on("mousemove", T).on("mousedown", T).on("click", function(e) {
-					"pv-overlay" !== e.target.id && "pv-container" !== e.target.id || $()
-				}).on("mousedown", P).on("keydown", P).on("keypress", P), a("#pv-spinner").hide(), a("#pv-bar-prev, #pv-prev-area").on("click", M), a("#pv-bar-next, #pv-next-area").on("click", E), a("#pv-bar-close").on("click", $), a("#pv-bar-fullscreen").on("click", D), a(p).on("resize", _).on("load", _))
+			//	h.enabled && (a(g).hide().appTo("body").on("keydown", z).on("mousemove", T).on("mousedown", T).on("click", function(e) {
+			//		"pv-overlay" !== e.target.id && "pv-container" !== e.target.id || $()
+			//	}).on("mousedown", P).on("keydown", P).on("keypress", P), a("#pv-spinner").hide(), a("#pv-bar-prev, #pv-prev-area").on("click", M), a("#pv-bar-next, #pv-next-area").on("click", E), a("#pv-bar-close").on("click", $), a("#pv-bar-fullscreen").on("click", D), a(p).on("resize", _).on("load", _))
 			};
 		e.exports = {
 			setLabels: A,
@@ -3927,7 +3927,8 @@ function(e) {
 				    var dplayer = new DPlayer({
 				        container: document.querySelector("#dplayer"),
 				        autoplay: true,
-				        mutex: true,
+						mutex: true,
+						hotkey:true,
 				        video: {
 				            url: url,
 				            type: 'auto'
@@ -4428,7 +4429,7 @@ function(e) {
 				r(l).appTo("#content")
 			},
 			w = function() {
-				r(u).appTo("#content"), f.AS_ADMIN ? (r("#pass").rm(), r("#login").rm(), r("#logout").on("click", m)) : (r("#pass").on("keydown", v)[0].focus(), r("#login").on("click", g), r("#logout").rm()), i.options.hasCustomPasshash && r("#hint").rm()
+				//r(u).appTo("#content"), f.AS_ADMIN ? (r("#pass").rm(), r("#login").rm(), r("#logout").on("click", m)) : (r("#pass").on("keydown", v)[0].focus(), r("#login").on("click", g), r("#logout").rm()), i.options.hasCustomPasshash && r("#hint").rm()
 			},
 			y = function() {
 				b(), w(), p()
