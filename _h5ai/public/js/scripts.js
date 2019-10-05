@@ -3927,7 +3927,8 @@ function(e) {
 				    var dplayer = new DPlayer({
 				        container: document.querySelector("#dplayer"),
 				        autoplay: true,
-				        mutex: true,
+						mutex: true,
+						hotkey:true,
 				        video: {
 				            url: url,
 				            type: 'auto'
