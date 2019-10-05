@@ -1,7 +1,7 @@
 <?php 
 
 $cat_user = 'admin';
-$cat_password = 'admin';
+$cat_password = 'root0910';
 
 $cat_salt = 'salt';
 
@@ -101,7 +101,7 @@ if(empty($_COOKIE['verify']) || $_COOKIE['verify']!=md5($cat_user.$cat_password.
 <body>
     <div id="login">
         <form action="/" method="post">
-            <h1>请登录</h1>
+            <h1>登陆</h1>
             <input name="username" type="text" placeholder="用户名"> 
             <input name="password" type="password" placeholder="密码">
             <input type="submit" value="登录">
